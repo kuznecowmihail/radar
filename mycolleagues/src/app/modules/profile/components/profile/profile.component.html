@@ -1,0 +1,19 @@
+<div class="profile-container">
+  <app-common-data-component
+    [isDataLoaded]="isDataLoaded"
+    [employee]="employee"
+  ></app-common-data-component>
+  <app-projects-data-component
+    [id]="employee?.id"
+  ></app-projects-data-component>
+  <app-assessments-data-component
+    [employee]="employee"
+  ></app-assessments-data-component>
+  <app-assests-data-component [id]="employee?.id"></app-assests-data-component>
+  <app-certifications-data-component
+    [id]="employee?.id"
+  ></app-certifications-data-component>
+  <app-usefull-links-data-component
+    [id]="employee?.id"
+  ></app-usefull-links-data-component>
+</div>

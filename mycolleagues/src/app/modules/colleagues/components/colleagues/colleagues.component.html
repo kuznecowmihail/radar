@@ -1,0 +1,15 @@
+<div class="collegues-container">
+  <app-filter-group-component
+    (onChanged)="filterColleagues($event)"
+  ></app-filter-group-component>
+
+  <div *ngIf="isDataLoading" class="colleagues-collection-container">
+    <app-collegue-component
+      *ngFor="let employee of employees"
+      [employee]="employee"
+    ></app-collegue-component>
+  </div>
+  <div *ngIf="!isDataLoading" class="progress-spinner-container">
+    <mat-spinner mode="indeterminate"></mat-spinner>
+  </div>
+</div>

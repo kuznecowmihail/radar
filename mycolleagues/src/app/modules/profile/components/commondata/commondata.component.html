@@ -1,0 +1,38 @@
+<div class="common-data-container">
+  <mat-card class="common-card">
+    <div *ngIf="!isDataLoaded" class="progress-spinner-container">
+      <mat-spinner mode="indeterminate"></mat-spinner>
+    </div>
+    <mat-card-header *ngIf="isDataLoaded">
+      <div mat-card-avatar class="header-image">
+        <img class="avatar" src="{{ employee?.src }}" />
+      </div>
+      <mat-card-title
+        >{{ employee?.firstname }} {{ employee?.lastname }}</mat-card-title
+      >
+      <mat-card-subtitle>{{ employee?.specialization }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content *ngIf="isDataLoaded">
+      <mat-form-field class="level-full-width" appearance="fill">
+        <mat-label>Level</mat-label>
+        <input matInput disabled value="{{ employee?.level }}" />
+      </mat-form-field>
+      <mat-form-field class="unit-full-width" appearance="fill">
+        <mat-label>Unit</mat-label>
+        <input matInput disabled value="{{ employee?.unittype }}" />
+      </mat-form-field>
+      <mat-form-field class="unit-manager-full-width" appearance="fill">
+        <mat-label>Unit manager</mat-label>
+        <input matInput disabled value="{{ employee?.unitmanager }}" />
+      </mat-form-field>
+      <mat-form-field class="manager-full-width" appearance="fill">
+        <mat-label>Manager</mat-label>
+        <input matInput disabled value="{{ employee?.manager }}" />
+      </mat-form-field>
+      <mat-card-content>
+        <p class="working-hours-label">Working hours</p>
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      </mat-card-content>
+    </mat-card-content>
+  </mat-card>
+</div>

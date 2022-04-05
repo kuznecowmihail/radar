@@ -1,0 +1,15 @@
+{
+  "server": "radar-sql.database.windows.net",
+  "authentication": {
+    "type": "azure-active-directory-password",
+    "options": {
+      "userName": "z_radar_app@omneemo.com",
+      "password": "UEGP9TX0OJLkUS#p",
+      "tenantId": "c51f70e9-df90-488c-a4ce-33675a149673"
+    }
+  },
+  "options": {
+    "encrypt": true,
+    "database": "radar-db"
+  }
+}

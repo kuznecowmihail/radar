@@ -1,0 +1,33 @@
+div.main-container {
+    display: grid;
+    grid-template-areas:
+      "app-header-component"
+      "content-container"
+      "app-footer-component";
+    grid-template-rows: 15% 75% 10%;
+    grid-template-columns: 100%;
+    margin: 0px;
+    height: 100vh;
+  }
+  .content-container {
+    overflow-y: scroll;
+    height: 100%;
+  }
+  app-header-component, app-footer-component {
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: black;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

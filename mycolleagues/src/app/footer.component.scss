@@ -1,0 +1,19 @@
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button {
+    vertical-align: middle;
+    min-width: 200px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+button.active {
+    color: black;
+    background-color:white
+}

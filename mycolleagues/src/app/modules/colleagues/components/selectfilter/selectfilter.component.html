@@ -1,0 +1,16 @@
+<div class="filter-container">
+  <mat-form-field appearance="fill">
+    <mat-label>{{ name }}</mat-label>
+    <mat-select
+      [ngModel]="selected"
+      (ngModelChange)="onSelectedChanged($event)"
+    >
+      <mat-option *ngFor="let variant of variantArray" [value]="variant">
+        {{ variant }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-fab color="primary" aria-label="Delete" (click)="delete()">
+    <mat-icon>delete</mat-icon>
+  </button>
+</div>

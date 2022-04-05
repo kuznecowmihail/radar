@@ -1,0 +1,7 @@
+<div class="main-container">
+  <app-header-component [title]="title"></app-header-component>
+  <div class="content-container">
+    <router-outlet (activate)="componentAdded($event)"></router-outlet>
+  </div>
+  <app-footer-component *ngIf="title !== 'Login'"></app-footer-component>
+</div>

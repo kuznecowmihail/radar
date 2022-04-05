@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+app-filter-group-component {
+  height: 20%;
+}
+.collegues-container {
+  height: 80%;
+}
+.colleagues-collection-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.progress-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

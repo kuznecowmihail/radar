@@ -1,0 +1,35 @@
+div.profile-container {
+    padding: 5px;
+    height: 98%;
+    display: grid;
+    grid-template-areas: "a b f"
+        "a b f"
+        "a b d"
+        "a c g";
+    grid-template-columns: 20% 40% 40%;
+}
+div.profile-container > * {
+    margin: 2px;
+    color: black;
+    //border: 3px solid black;
+    //border-radius: 25px;
+    //background-color: white;
+}
+app-common-data-component {
+    grid-area: a;
+}
+app-projects-data-component {
+    grid-area: b;
+}
+app-assessments-data-component {
+    grid-area: c;
+}
+app-assests-data-component {
+    grid-area: d;
+}
+app-certifications-data-component {
+    grid-area: f;
+}
+app-useful-linsks-data-component {
+    grid-area: g;
+}

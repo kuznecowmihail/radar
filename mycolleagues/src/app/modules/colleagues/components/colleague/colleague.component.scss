@@ -1,0 +1,118 @@
+.collegue-container {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 230px;
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  background-color: #1a1a1a;
+  line-height: 1.2em;
+}
+.collegue-container *,
+.collegue-container *:before,
+.collegue-container *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+.collegue-container img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.collegue-container .employee-caption {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  padding: 10px 20px;
+  background-color: #ffffff;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.collegue-container h3,
+.collegue-container p {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.collegue-container h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.collegue-container p {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.collegue-container i {
+  position: absolute;
+  color: #fff;
+  font-size: 34.11764706px;
+  line-height: 58px;
+  width: 58px;
+  top: 0;
+  right: 0;
+  background-color: #e67e22;
+  text-align: center;
+  -webkit-transform: translateX(58px);
+  transform: translateX(58px);
+}
+.collegue-container a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.collegue-container:hover img,
+.collegue-container.hover img {
+  zoom: 1;
+  filter: alpha(opacity=30);
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+.collegue-container:hover .employee-caption,
+.collegue-container.hover .employee-caption,
+.collegue-container:hover h3,
+.collegue-container.hover h3,
+.collegue-container:hover p,
+.collegue-container.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+.collegue-container:hover .employee-caption,
+.collegue-container.hover .employee-caption {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.collegue-container:hover h3,
+.collegue-container.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.collegue-container:hover p,
+.collegue-container.hover p {
+  -webkit-transition-delay: 0.45s;
+  transition-delay: 0.45s;
+  opacity: 0.5;
+}
+.collegue-container:hover i,
+.collegue-container.hover i {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}

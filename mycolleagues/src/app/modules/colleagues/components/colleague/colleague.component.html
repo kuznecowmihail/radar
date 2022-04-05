@@ -1,0 +1,9 @@
+<div class="collegue-container" (click)="openCard()">
+  <img [src]="employee?.src" />
+  <div class="employee-caption">
+    <h3>
+      {{ employee?.firstname }} {{ employee?.lastname }}, {{ employee?.age }}
+    </h3>
+    <p>{{ employee?.specialization }}</p>
+  </div>
+</div>

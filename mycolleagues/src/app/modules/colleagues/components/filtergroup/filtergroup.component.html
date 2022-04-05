@@ -1,0 +1,14 @@
+<div class="filter-group-container">
+  <app-selectfilter-component
+    (onChanged)="onFilterChanged()"
+    [variantArray]="unitTypes"
+    [(selected)]="selectedUnitType"
+    name="Unit type"
+  ></app-selectfilter-component>
+  <app-selectfilter-component
+    (onChanged)="onFilterChanged()"
+    [variantArray]="levels"
+    [(selected)]="selectedLevel"
+    name="Level"
+  ></app-selectfilter-component>
+</div>
